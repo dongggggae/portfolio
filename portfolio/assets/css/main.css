@@ -1,0 +1,20 @@
+:root {
+  --color-main: rgb(30, 31, 33);
+  --color-sub: rgb(255, 255, 255);
+  --color-sup: rgb(232, 232, 232);
+  --color-blue: rgb(0, 115, 229);
+  --color-pro1: rgb(161, 161, 229);
+  --color-gray: rgb(165, 169, 172);
+  --color-sky: rgb(235, 245, 255);
+  --xs: 10px;
+  --s: 14px;
+  --m: 16px;
+  --l: 20px;
+  --xl: 24px;
+  --xxl: 32px;
+  --xxxl: 40px;
+}
+
+body {
+  background-color: var(--color-main);
+}

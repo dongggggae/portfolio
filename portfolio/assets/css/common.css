@@ -7,7 +7,20 @@
   font-family: "pretendard";
   src: url(../fonts/Pretendard-Regular.woff);
 }
+
+html,
+body {
+  height: 100%;
+}
 /* 본문 폰트 */
+body {
+  font-family: "pretendard";
+  line-height: 1.25;
+}
+/* 헤더 폰트 */
+header {
+  font-family: "cafesquare";
+}
 
 .out-text {
   overflow: hidden;
