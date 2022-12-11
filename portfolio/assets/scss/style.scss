@@ -340,6 +340,7 @@ body {
             span {
               display: block;
               position: relative;
+              em{color: var(--color-blue);}
             }
           }
         }
@@ -386,12 +387,14 @@ body {
     }
   }
   .section-process {
-    .section-process__container {
-      .section-process__wrap {
-        width: 100%;
-        .process {
-          .process__img {
-            width: 80vw;
+    .section__wrap {
+      .section-process__container {
+        .section-process__wrap {
+          width: 100%;
+          .process {
+            .process__img {
+              width: 80vw;
+            }
           }
         }
       }

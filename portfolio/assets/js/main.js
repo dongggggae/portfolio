@@ -133,8 +133,9 @@ sectionProcess
     opacity: 0,
   });
 
-$(".section-about .tech-lists .tech-list").each(function (i, li) {
+$(".section-about section-about__inner .tech-lists .tech-list").each(function (i, li) {
   gsap.from(li, {
+    
     scrollTrigger: {
       trigger: li,
       start: "top 80%",

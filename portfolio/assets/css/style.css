@@ -307,6 +307,9 @@ body {
   display: block;
   position: relative;
 }
+.section-about .section-about__col2 .section-about__inner .sectiom-about__text-box .text-box__title strong span em {
+  color: var(--color-blue);
+}
 
 @media screen and (max-width: 1024px) {
   .section-process .section__wrap .section-process__container .section-process__wrap {
@@ -334,10 +337,10 @@ body {
   .section-work .section-work__contents {
     gap: 15px;
   }
-  .section-process .section-process__container .section-process__wrap {
+  .section-process .section__wrap .section-process__container .section-process__wrap {
     width: 100%;
   }
-  .section-process .section-process__container .section-process__wrap .process .process__img {
+  .section-process .section__wrap .section-process__container .section-process__wrap .process .process__img {
     width: 80vw;
   }
   .section-about .section-about__inner .tech-lists {
