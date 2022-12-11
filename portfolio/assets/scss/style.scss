@@ -47,7 +47,7 @@ body {
   align-items: flex-start;
   max-width: 1400px;
   padding: 0 1.5rem;
-  height: 20vh;
+  min-height: 20vh;
   margin: 0 auto;
 
   color: var(--color-sub);
@@ -73,6 +73,7 @@ body {
   .btn-area {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 2.5vh auto 6.5vh;
     gap: 15px;
     .btn {
@@ -85,6 +86,7 @@ body {
       transition: 0.25s ease-in;
       &:hover {
         background-color: var(--color-blue);
+        color: var(--color-sub);
       }
     }
   }
@@ -340,7 +342,9 @@ body {
             span {
               display: block;
               position: relative;
-              em{color: var(--color-blue);}
+              em {
+                color: var(--color-blue);
+              }
             }
           }
         }
@@ -432,6 +436,12 @@ body {
 
 @media screen and (max-width: 576px) {
   .section-work {
+    .btn-area {
+      .btn {
+        margin: 0 auto;
+        width: calc(30% + 30px);
+      }
+    }
     .section-work__contents {
       gap: 5px;
     }

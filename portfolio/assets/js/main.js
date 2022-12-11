@@ -116,34 +116,41 @@ const sectionProcess = gsap.timeline({
 sectionProcess
   .to(".section-process__container .process1", {
     opacity: 1,
+    zIndex: 9999,
   })
   .to(".section-process__container .process1", {
     opacity: 0,
+    zIndex: 0,
   })
   .to(".section-process__container .process2", {
     opacity: 1,
+    zIndex: 9999,
   })
   .to(".section-process__container .process2", {
     opacity: 0,
+    zIndex: 0,
   })
   .to(".section-process__container .process3", {
     opacity: 1,
+    zIndex: 9999,
   })
   .to(".section-process__container .process2", {
     opacity: 0,
+    zIndex: 0,
   });
 
-$(".section-about section-about__inner .tech-lists .tech-list").each(function (i, li) {
+const techLists = document.querySelectorAll(".tech-lists .tech-list");
+
+techLists.forEach((li, index) => {
   gsap.from(li, {
-    
     scrollTrigger: {
       trigger: li,
       start: "top 80%",
       end: "bottom 60%",
     },
-    duration: i * 0.35,
+    delay: index * 0.15,
     opacity: 0,
-    yPercent: 50,
+    yPercent: 25,
   });
 });
 
